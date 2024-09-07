@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+
+* {
+
+    box-sizing: border-box
+    }
+    body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+        background-color: white;
+    }
+    .mySlides {
+    display: none
+    }
+    img {
+    vertical-align: middle;
+    }
+    .slideshow-container {
+    position: relative;
+    margin: auto;
+    padding: 0px;
+    }
+    /* Next & previous buttons */
+    .prev,
+    .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    }
+    /* Position the "next button" to the right */
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    }
+    /* Caption text */
+    .text {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    }
+    /* Number text (1/3 etc) */
+    .numbertext {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
+    /* The dots/bullets/indicators */
+    .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #999999;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+    .active,
+    .dot:hover {
+    background-color: #111111;
+    }
+    /* Fading animation */
+    .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+    @-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+    }
+    @keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+    }
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+    }
+ *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+
+}
+
+.mainpage
+{
+    text-align: center;
+    background-color: white;
+    
+}
+.logo{
+  position:absolute;
+  height:90px;
+  left:80px;
+  width:130px;
+}
+
+.mainpage ul 
+{
+    display: inline-flex;
+}
+.mainpage ul li 
+{
+    list-style-type: none;
+    width: 120px;
+    margin: 10px;
+    padding: 15px;
+}
+.mainpage ul li:hover 
+{
+    background-color: white;
+}
+.mainpage ul li a
+{
+    color: black;
+    text-decoration: none;
+}
+.subtask1
+{
+    display: none;
+    background-color: white;
+}
+.mainpage ul li:hover .subtask1 
+{
+    position: absolute;
+    display: block;
+    background-color: white;
+    margin: 15px 0px 0px -15px;
+}
+.mainpage ul li:hover .subtask1 ul 
+{
+    display: block;
+    margin: 10px;
+}
+.mainpage ul li:hover .subtask1 ul li 
+{
+    width: 100px;
+    padding: 10px;
+}
+.subtask2 
+{
+    display: none;
+}
+.mainpage .subtask1 ul li:hover .subtask2 
+{
+    display: block;
+    background-color: white;
+    position: absolute;
+}
+.subtask2 
+{
+    margin-left: 100px;
+    top: 0%;
+}
+.subtask3 
+{
+    display: none;
+}
+.mainpage .subtask1 ul li:hover .subtask3 
+{
+    display: block;
+    background-color: white;
+    position: absolute;
+}
+.subtask3 
+{
+    margin-left: 90px;
+    top: 45%;
+}
+.subtask4 
+{
+    display: none;
+}
+.mainpage .subtask1 ul li:hover .subtask4 
+{
+    display: block;
+    background-color: white;
+    position: absolute;
+}
+.subtask4 
+{
+    margin-left: 90px;
+    top: 80%;
+}
+.heading
+{
+  text-align: center;
+}
+
+/*img 
+{
+    display: block;
+
+}*/
+.img123
+{
+    width: 450px;
+    height: 450px;
+   
+}
+.rotate
+{
+    animation: spin 30s linear infinite;
+    width: 450px; /* Adjust to the desired width */
+    height: 450px; /* Adjust to the desired height */
+    overflow: hidden;
+    background-image: url('52.jpg'); /* Replace with your image path */
+    background-size: cover;
+    margin :  80px ; /* Center the element horizontally */
+    margin-left: 80px;
+    transform-origin: center center; /* Center the rotation */
+}
+
+@keyframes spin
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100% 
+	{
+		transform: rotate(360deg);
+	}
+}
+
+.service-swipe {
+    white-space: nowrap;
+	justify-content: center;
+	align-items: center;
+    background-image:url('images/img344.jpg');	
+    background-size:cover;
+    background-repeat:no-repeat;
+    
+    background-size:cover;
+	background-attachment: fixed;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+
+	
+}
+.service-swipe .service{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.service-swipe .img{
+    width: 50px;
+    text-align: top;
+}
+.service-swipe  a {
+	padding: 0;
+    text-align: center;
+	margin: 40px 30px;
+	text-decoration: none;
+}
+.service-swipe .serv {
+	justify-content: space-around;
+	padding: 10px;
+	align-items: center;
+	text-align: center;
+	width: 350px;
+	height: 200px;
+	box-shadow: inset 0 0 20px rgba(246, 240, 240, 0.05),
+					0 0 50px rgba(0,0,0,0.8);
+	border-radius: 5px;
+	cursor: pointer;
+	transition-duration: .5s;
+}
+
+.service-swipe .serv p {
+	color: #f2f2f2;
+	font-size: 1.2em;
+	font-family: 'Open Sans',sans-serif;
+}
+.service-swipe .serv:hover {
+	box-shadow: 0 0 50px rgba(255,255,255,0.8);
+	transform: translateY(-10px);
+}
+.service{
+    overflow: hidden;
+}
+img{
+    width: 20%;
+}
+
+.serv{
+    background-color: white;
+    margin: 30px;
+
+    
+}
+.matter
+{
+    margin-top: 0px;
+    margin-left: 100px ;
+}
+.matter1{
+    background-color: lightgray;
+    
+
+}
+
+/* Custom styles for the slider */
+
+
+  .owl-carousel img {
+    width: 400px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    
+    border-radius: 10%;
+    border: 5px solid white;  
+    background-color: white;
+    
+  }
+  
+  .slider-item {
+   
+    position: relative;
+  }
+  
+  .slider-item:hover img {
+    border: 3px solid white;
+}

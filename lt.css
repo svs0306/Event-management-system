@@ -1,0 +1,61 @@
+.service-swipe {
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-image:url('img344.jpg');	
+    background-size:cover;
+    background-repeat:no-repeat;
+    
+    background-size:cover;
+    background-attachment: fixed;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+
+	
+}
+.service-swipe .service{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.service-swipe .img{
+    width: 50px;
+    text-align: top;
+}
+.service-swipe  a {
+	padding: 0;
+    text-align: center;
+	margin: 40px 30px;
+	text-decoration: none;
+}
+.service-swipe .serv {
+	justify-content: space-around;
+	padding: 10px;
+	align-items: center;
+	text-align: center;
+	width: 350px;
+	height: 200px;
+	box-shadow: inset 0 0 20px rgba(246, 240, 240, 0.05),
+					0 0 50px rgba(0,0,0,0.8);
+	border-radius: 5px;
+	cursor: pointer;
+	transition-duration: .5s;
+}
+
+.service-swipe .serv p {
+	color: #f2f2f2;
+	font-size: 1.2em;
+	font-family: 'Open Sans',sans-serif;
+}
+.service-swipe .serv:hover {
+	box-shadow: 0 0 50px rgba(255,255,255,0.8);
+	transform: translateY(-10px);
+}
+.service{
+    overflow: hidden;
+}
+.serv img {
+      height: 60px; /* Set the desired height */
+      width: 60px; /* Set the desired width */
+    }
